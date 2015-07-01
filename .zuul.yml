@@ -1,0 +1,5 @@
+name: request-animation-loop
+ui: mocha-qunit
+browsers:
+  - name: chrome
+    version: 30

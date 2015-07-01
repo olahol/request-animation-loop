@@ -11,12 +11,6 @@
 npm install request-animation-loop --save
 ```
 
-or
-
-```bash
-bower install request-animation-loop --save
-```
-
 ## Example
 
 Rotate an element for 1 second.

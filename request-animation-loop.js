@@ -51,9 +51,11 @@
   var animationLoop = function (id, fn, start) {
     animationFrame(function (end) {
       end = end || timeStamp();
+      var dt  = end - start;
+      if (dt < 0) { dt = 0; }
       if (isRunning(id)) {
         animationLoop(id, fn, end);
-        fn(end - start, id);
+        fn(dt, id);
       }
     });
   };

@@ -22,7 +22,7 @@ test("should test delta time", function (done) {
   var called = 0;
   var id = requestAnimationLoop(function (dt) {
     called++;
-    assert.ok(dt > 0, "delta time should be above zero");
+    assert.ok(dt >= 0, "delta time should be above or equal to zero");
     if (called > 10) {
       cancelAnimationLoop(id);
       done();

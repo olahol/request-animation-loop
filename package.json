@@ -1,7 +1,7 @@
 {
   "name": "request-animation-loop",
   "version": "0.1.0",
-  "description": "As setInterval is to setTimeout, requestAnimationLoop is to requestAnimationFrame.",
+  "description": "setInterval is to setTimeout as requestAnimationLoop is to requestAnimationFrame.",
   "main": "request-animation-loop.js",
   "scripts": {
     "test-local": "./node_modules/.bin/zuul --local 8080 --ui mocha-qunit -- test.js",
